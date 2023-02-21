@@ -1,0 +1,17 @@
+:root {
+  --ff-body: Helvetica, Arial, sans-serif;
+  --ff-title: "Open Sans", sans-serif;
+}
+
+h1 {
+  color: aqua;
+  background-color: #333;
+}
+
+body {
+  font-family: var(--ff-body);
+}
+
+img[class] {
+  width: 100%;
+}

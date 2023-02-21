@@ -1,0 +1,50 @@
+.header {
+  display: flex;
+  border-bottom: 1px solid var(--clr-dark);
+
+  &__logo-container {
+    width: 200px;
+    align-self: center;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .nav {
+    &-list {
+      display: flex;
+      list-style: none;
+      flex-wrap: wrap;
+      gap: 1rem;
+
+      &__item {
+        text-decoration: none;
+        color: var(--clr-dark);
+        position: relative; //for positioning underline psudo element
+
+        &:hover {
+          &::before {
+            content: "";
+            width: 100%;
+            height: 1px;
+            background-color: var(--clr-dark);
+            position: absolute;
+            inset-block-end: -2px;
+            inset-inline-start: 0;
+          }
+        }
+      }
+
+      &__item--current {
+        &::before {
+          content: "";
+          width: 100%;
+          height: 1px;
+          background-color: var(--clr-dark);
+          position: absolute;
+          inset-block-end: -2px;
+          inset-inline-start: 0;
+        }
+      }
+    }
+  }
+}
