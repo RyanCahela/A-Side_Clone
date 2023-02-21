@@ -1,3 +1,15 @@
+.nav--desktop {
+  display: none; //hide desktop nav on mobile devices
+}
+
+.nav--mobile {
+  display: block;
+}
+
+.nav-list {
+  display: none;
+}
+
 .header {
   display: flex;
   border-bottom: 1px solid var(--clr-dark);
@@ -9,6 +21,14 @@
 }
 
 @media screen and (min-width: 800px) {
+  .nav--mobile {
+    display: none; //hide mobile nav on larger screens
+  }
+
+  .nav--desktop {
+    display: block;
+  }
+
   .nav {
     &-list {
       display: flex;

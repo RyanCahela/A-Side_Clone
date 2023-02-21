@@ -6,7 +6,8 @@
   "author": "5t3ph",
   "scripts": {
     "build:sass": "sass  --no-source-map src/sass:public/css",
-    "copy:html": "copyfiles -u 1 ./src/*.html public",
+    "copy:php": "copyfiles -u 1 ./src/*.php public",
+    "copy:partials": "copyfiles partials/*.php public",
     "copy:assets": "copyfiles -u 1 ./src/assets/* public",
     "copy": "npm-run-all --parallel copy:*",
     "watch:html": "onchange 'src/*.html' -- npm run copy:html",
