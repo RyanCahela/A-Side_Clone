@@ -1,4 +1,5 @@
 @use "_normalize.scss";
+@use "./lib/_hamburger.scss";
 @use "_custom-properties.scss";
 @use "_general.scss";
-@use "_header.scss";
+@use "./header/_nav.scss";
